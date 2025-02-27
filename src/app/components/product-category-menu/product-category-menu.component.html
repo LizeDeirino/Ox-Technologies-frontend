@@ -1,1 +1,36 @@
-<p>product-category-menu works!</p>
+<div id="site-navigation-wrap" class="clr">
+    <nav class="navbar navbar-expand-lg ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li id="nav-item" class="nav-item active">
+                    <a id="menu-item" class="nav-link" href="https://oxtechnologies.co.za/#hero"><i class="fa fa-home" aria-hidden="true"></i> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a id="menu-item2" class="nav-link" href="https://oxtechnologies.co.za/#about">Who we are</a>
+                </li>
+                <li class="nav-item">
+                    <a id="menu-item" class="nav-link" href="https://oxtechnologies.co.za/#gallery">Our Process</a>
+                </li>
+                <li class="nav-item">
+                    <a id="menu-item" class="nav-link" href="https://oxtechnologies.co.za/#features">Our Promise</a>
+                </li>
+                <li class="nav-item" *ngFor="let tempProductCategory of productCategories">
+                    <a id="menu-item" class="nav-link" routerLink="/category/{{ tempProductCategory.id }}" routerLinkActive="active-link">
+                        {{ tempProductCategory.categoryName }}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="menu-item" class="nav-link" href="/api/cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a id="menu-item" class="nav-link" href="https://oxtechnologies.co.za/#contact"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+  
