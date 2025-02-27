@@ -7,7 +7,10 @@ import { HttpClientModule } from '@angular/common/http'
 import { ProductService } from './services/product.service';
 
 import { Routes, RouterModule } from '@angular/router';
-import { ProductCategoryMenuComponent } from './components/product-category-menu/product-category-menu.component'
+import { ProductCategoryMenuComponent } from './components/product-category-menu/product-category-menu.component';
+import { SiteLogoComponent } from './components/site-logo/site-logo.component';
+import { SiteNavigationComponent } from './components/site-navigation/site-navigation.component';
+import { PageHeaderComponent } from './components/page-header/page-header.component'
 
 const routes: Routes = [
   {path: 'category/:id', component: ProductListComponent},
@@ -22,7 +25,10 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     ProductListComponent,
-    ProductCategoryMenuComponent
+    ProductCategoryMenuComponent,
+    SiteLogoComponent,
+    SiteNavigationComponent,
+    PageHeaderComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
