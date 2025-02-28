@@ -1,0 +1,12 @@
+<div class="search-block">
+  <input
+    #myInput
+    type="text"
+    class="search-input"
+    placeholder="Search for products..."
+    (keyup.enter)="doSearch(myInput.value)"
+  />
+  <button (click)="doSearch(myInput.value)" class="search-btn">
+    Search
+  </button>
+</div>

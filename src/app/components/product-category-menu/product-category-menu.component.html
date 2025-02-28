@@ -1,15 +1,11 @@
-<div class="toolbar clr">
-  <nav class="navbar navbar-expand-lg">
-    <ul id="category-menu" class="navbar-nav">
-      <li class="nav-item" *ngFor="let tempProductCategory of productCategories">
-        <a
-          class="menu-item"
-          routerLink="/category/{{ tempProductCategory.id }}"
-          routerLinkActive="active-link"
-        >
-          {{ tempProductCategory.categoryName }}
-        </a>
-      </li>
-    </ul>
-  </nav>
-</div>
+<ul id="category-menu" class="navbar-nav">
+  <li class="nav-item" *ngFor="let tempProductCategory of productCategories">
+    <a
+      class="menu-item"
+      routerLink="/category/{{ tempProductCategory.id }}"
+      routerLinkActive="active-link"
+    >
+      {{ tempProductCategory.categoryName }}
+    </a>
+  </li>
+</ul>
