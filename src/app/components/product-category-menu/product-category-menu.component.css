@@ -1,0 +1,44 @@
+.toolbar {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 20px;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0,20px;
+    padding: 0;
+    visibility: visible;
+    color: #4a4a4a;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+a:hover {
+    background-color: #466e41;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    position: relative;
+}
+
+li {
+    border-color: #466e41;
+    padding: 0 50px;
+    margin-right: 30px;
+    position: relative;
+    border-width: 0 0 0 3px;
+    border-style: solid;
+    background-color: #f8f7f7;
+}
+
+li:hover {
+    background-color: #466e41;
+    color: #fff;
+}
