@@ -1,0 +1,26 @@
+.detail-price {
+    margin: 15px 0 0;
+    font-weight: 400;
+    color: #466e41;
+    font-size: 1.3rem;
+}
+.mt-5 {
+    background-color: #fff;
+    border: 1px solid transparent;
+    color: #466e41;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: .55rem 1.5rem;
+    display: inline-block;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: none;
+    text-decoration: none;
+}
+.mt-5:hover {
+    background-color: #83b67d;
+}
