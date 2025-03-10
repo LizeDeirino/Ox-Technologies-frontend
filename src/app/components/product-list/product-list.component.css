@@ -8,6 +8,40 @@ a {
     margin-top: 0px;
 }
 
+.main-content {
+    padding: 0;
+}
+p {
+    color: #333
+}
+.pagination {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    
+    margin-bottom: 20px;
+}
+
+#custom-pagination {
+    padding-left: 50%!important;
+    --bs-primary:#fd0d71;
+    --bs-link-hover-color:#fd0d71;
+    --bs-link-color:#fd0d71;
+    --bs-pagination-focus-color:#fd0d71;
+    --bs-pagination-active-bg:var(--bs-link-color);
+    --bs-pagination-color:#fd0d71;
+    --bs-pagination-hover-color:#fd0d71;
+    --bs-pagination-active-border-color:#fd0d71;
+    
+}
+
+&.active,
+  .active > & {
+    background-color: #fd0d71;
+    border-color: #fd0d71;
+  }
+
 
 
 

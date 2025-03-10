@@ -1,3 +1,6 @@
+import { publishFacade } from "@angular/compiler";
+import { ProductCategory } from "./product-category";
+
 export class Product {
     constructor(
         public id: number,

@@ -1,26 +1,24 @@
 <header
-  id="site-header"
-  class="minimal-header clr"
-  data-height="139"
-  itemscope="itemscope"
+id="site-header"
+class="minimal-header clr"
+data-height="139"
+itemscope="itemscope"
 >
-  <div id="site-header-inner" class="clr">
-    <app-site-logo></app-site-logo>
-    <app-site-navigation></app-site-navigation>
-  </div>
+<div id="site-header-inner" class="clr">
+  <!-- site logo -->
+  <app-site-logo></app-site-logo>
+  <!-- site navigation -->
+  <app-site-navigation></app-site-navigation>
+</div>
 </header>
 
-<div id="main" class="site-main" role="main">
-  <app-page-header></app-page-header>
+<div id="main" class="site-main clr" role="main">
+<!-- Brand promise header & background -->
+<app-page-header></app-page-header>
 
   <div id="content-wrap" class="container">
     <div id="primary" class="content-area">
-      <div class="toolbar clr">
-        <nav class="navbar navbar-expand-lg">
-          <app-product-category-menu></app-product-category-menu>
-          <app-search></app-search>
-        </nav>
-      </div>
+      <!-- product navigation & product list -->
       <router-outlet></router-outlet>
     </div>
   </div>

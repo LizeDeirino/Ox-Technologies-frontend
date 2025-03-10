@@ -1,8 +1,33 @@
 <div class="main-content">
-    <div class="section-content section-content-p30">
+    <div class="section-content">
         <div class="container-fluid">
             <div class="row">
 
+                <!-- product categories, search & pagination -->
+                <div class="pagination">
+                    
+                    <div class="row">
+                        <!-- product categories -->
+                        <div class="col-md-3"><app-product-category-menu></app-product-category-menu></div>
+                        <!-- search -->
+                        <div class="col-md-6"><app-search></app-search></div>
+                        <!-- pagination -->
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div id="custom-pagination" class="col-md-9" style="padding-left: 30%">
+                                    <ngb-pagination [(page)]="thePageNumber"
+                                                    [pageSize]="thePageSize"
+                                                    [collectionSize]="theTotalElements"
+                                                    (pageChange)="listProducts()">
+
+                                    </ngb-pagination>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
                 <!-- loop over collection of products -->
                 <div *ngFor="let tempProduct of products" class="col-md-3">
 
@@ -11,9 +36,10 @@
                             <img src="{{ tempProduct.imageUrl }}" class="img-responsive">
                         </a>
                         <a routerLink="/products/{{tempProduct.id }}">
+                            <p>{{ tempProduct.sku }}</p>
                             <h1>{{ tempProduct.name }}</h1>
                         </a>
-                        <div class="price">{{ tempProduct.unitPrice | currency: 'USD'}}</div>
+                        <div class="price">{{ tempProduct.unitPrice | currency: 'R'}}</div>
                         <a href="#" class="primary-btn">Add to cart</a>
                     </div>
 
@@ -24,6 +50,8 @@
                     No products found.
                 </div>
             </div>
+
+            
         </div>
     </div>
 </div>
